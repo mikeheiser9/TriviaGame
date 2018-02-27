@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mike's Trivia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+</head>
+
+<body>
+<container>
+    <div id="startScreen">
+        <!-- start screen for the game -->
+        <h1 class="header">Philly Sports Trivia</h1>
+        <button id="startButton">Start</button>
+    </div>
+    <!-- game container -->
+    <div id="gameContainer">
+        <h1 class="header">Philly Sports Trivia</h1>
+        <h2 id="timer">Time Remaining: <span id:"timerNumber">60 secs</span></h2>
+        <div id="quizQuestions"></div>
+        <div id="quizAnswers"></div>
+        <br>
+        <br>
+        <button id="submitButton">Submit Answer</button>
+        <button id="previousButton">Previous Question</button>
+        
+    </div>
+
+     <!-- end of game screen -->
+    <div id="endGame">
+    <h1 class="header">Philly Sports Trivia</h1>
+    <span>Game Over!</span>
+    <span id="gameResults"></span>
+
+    </div>
+</container>
+
+<script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="assets/javascript/app.js"></script>
+    
+</body>
+</html>
