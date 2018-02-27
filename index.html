@@ -1,46 +1,112 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mike's Trivia Game</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <title>Philly Sports Trivia</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 
 <body>
-<container>
-    <div id="startScreen">
-        <!-- start screen for the game -->
-        <h1 class="header">Philly Sports Trivia</h1>
-        <button id="startButton">Start</button>
-    </div>
-    <!-- game container -->
-    <div id="gameContainer">
-        <h1 class="header">Philly Sports Trivia</h1>
-        <h2 id="timer">Time Remaining: <span id:"timerNumber">60 secs</span></h2>
-        <div id="quizQuestions"></div>
-        <div id="quizAnswers"></div>
-        <br>
-        <br>
-        <button id="submitButton">Submit Answer</button>
-        <button id="previousButton">Previous Question</button>
-        
-    </div>
 
-     <!-- end of game screen -->
-    <div id="endGame">
-    <h1 class="header">Philly Sports Trivia</h1>
-    <span>Game Over!</span>
-    <span id="gameResults"></span>
-
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Philly Sports Trivia Game</h1>
+        </div>
+        <row>
+            <div class="col-md-5"></div>
+            <div class="col-md-2">
+                <button type="button" class="startButton">Start</button>
+            </div>
+            <div class="col-md-5"></div>
+        </row>
+        <row>
+            <div class="col-md-12">
+                <h2>
+                    <div id="timer"></div>
+                </h2>
+            </div>
+        </row>
+        <row>
+            <div class="col-md-12">
+                <h2>
+                    <div id="questionsHolder"></div>
+                </h2>
+                <h2>
+                    <div id="answersHolder"></div>
+                </h2>
+            </div>
+        </row>
+        <row>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <h2>
+                    <div id="image"></div>
+                </h2>
+            </div>
+            <div class="col-md-4"></div>
+        </row>
+        <row>
+            <div class="col-md-12">
+                <h2>
+                    <div id="choiceOne"></div>
+                </h2>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <h2>
+                    <div id="correctAnswer"></div>
+                </h2>
+            </div>
+            <div class="col-md-4"></div>
+            <row>
+                <div class="col-md-12">
+                    <h2>
+                        <div id="choiceTwo"></div>
+                    </h2>
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <h2>
+                        <div id="incorrectAnswer"></div>
+                    </h2>
+                </div>
+                <div class="col-md-4"></div>
+            </row>
+            <row>
+                <div class="col-md-12">
+                    <h2>
+                        <div id="choiceThree"></div>
+                    </h2>
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <h2>
+                        <div id="unansweredQuestions"></div>
+                    </h2>
+                </div>
+                <div class="col-md-4"></div>
+            </row>
+            <row>
+                <div class="col-md-12">
+                    <h2>
+                        <div id="choiceFour"></div>
+                    </h2>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h2>
+                        <div id="restartGame"></div>
+                    </h2>
+                </div>
+                <div class="col-md-2"></div>
+            </row>
     </div>
-</container>
-
-<script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-<script src="assets/javascript/app.js"></script>
-    
+    <!-- Link to JS -->
+    <script src="assets/javascript/app.js"></script>
 </body>
+
 </html>
