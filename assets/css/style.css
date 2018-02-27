@@ -1,4 +1,34 @@
 body {
-/* background-image: url("https://goo.gl/images/f1PFdt"); */
 background-color: darkgreen;
+font-family: 'PT Sans Caption', sans-serif;
+/* background-image: url("assets/images/birds.jpg"); */
 };
+
+.jumbotron {
+ background-color: lemonchiffon;
+ text-align: center;
+};
+
+#button {
+    width: 100%;
+    border: 5px solid white;
+    padding: 20px;
+}
+
+#question-holder {
+    color: white;
+}
+
+#time-holder {
+    text-align: center;
+    color: 
+}
+
+#answer-holder {
+    text-align: center;
+}
+
+#title {
+    margin-left: 35px;
+
+}

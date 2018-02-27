@@ -2,10 +2,17 @@
 <html>
 
 <head>
-    <title>Philly Sports Trivia</title>
+    <title>Philly Sports Trivia Game</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
@@ -14,29 +21,29 @@
 
     <div class="container">
         <div class="jumbotron">
-            <h1>Philly Sports Trivia Game</h1>
+            <h1 id="title">Philly Sports Trivia Game</h1>
         </div>
         <row>
             <div class="col-md-5"></div>
             <div class="col-md-2">
-                <button type="button" class="startButton">Start</button>
+                <button id="button" type="button" class="btn start">Start</button>
             </div>
             <div class="col-md-5"></div>
         </row>
         <row>
             <div class="col-md-12">
                 <h2>
-                    <div id="timer"></div>
+                    <div id="time-holder"></div>
                 </h2>
             </div>
         </row>
         <row>
             <div class="col-md-12">
                 <h2>
-                    <div id="questionsHolder"></div>
+                    <div id="question-holder"></div>
                 </h2>
                 <h2>
-                    <div id="answersHolder"></div>
+                    <div id="answer-holder"></div>
                 </h2>
             </div>
         </row>
@@ -44,7 +51,7 @@
             <div class="col-md-4"></div>
             <div class="col-md-4">
                 <h2>
-                    <div id="image"></div>
+                    <div id="image-holder"></div>
                 </h2>
             </div>
             <div class="col-md-4"></div>
@@ -52,26 +59,26 @@
         <row>
             <div class="col-md-12">
                 <h2>
-                    <div id="choiceOne"></div>
+                    <div id="choice-holder-1"></div>
                 </h2>
             </div>
             <div class="col-md-4"></div>
             <div class="col-md-4">
                 <h2>
-                    <div id="correctAnswer"></div>
+                    <div id="correct-holder"></div>
                 </h2>
             </div>
             <div class="col-md-4"></div>
             <row>
                 <div class="col-md-12">
                     <h2>
-                        <div id="choiceTwo"></div>
+                        <div id="choice-holder-2"></div>
                     </h2>
                 </div>
                 <div class="col-md-4"></div>
                 <div class="col-md-4">
                     <h2>
-                        <div id="incorrectAnswer"></div>
+                        <div id="incorrect-holder"></div>
                     </h2>
                 </div>
                 <div class="col-md-4"></div>
@@ -79,13 +86,13 @@
             <row>
                 <div class="col-md-12">
                     <h2>
-                        <div id="choiceThree"></div>
+                        <div id="choice-holder-3"></div>
                     </h2>
                 </div>
                 <div class="col-md-4"></div>
                 <div class="col-md-4">
                     <h2>
-                        <div id="unansweredQuestions"></div>
+                        <div id="unanswered-holder"></div>
                     </h2>
                 </div>
                 <div class="col-md-4"></div>
@@ -93,13 +100,13 @@
             <row>
                 <div class="col-md-12">
                     <h2>
-                        <div id="choiceFour"></div>
+                        <div id="choice-holder-4"></div>
                     </h2>
                 </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <h2>
-                        <div id="restartGame"></div>
+                        <div id="restart-holder"></div>
                     </h2>
                 </div>
                 <div class="col-md-2"></div>
