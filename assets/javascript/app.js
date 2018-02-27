@@ -52,6 +52,9 @@ $(document).ready(function () {
         }
     ];
 
+
+        
+
     // create a function that hides the start screen and initiates the game
     function startGame() {
         //hide the start screen and end screen and show the game container
